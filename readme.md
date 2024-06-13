@@ -12,11 +12,9 @@ This repository is dedicated for the Final Integrated Project of the Interactive
 2. Open the index.html file on the browser of your choice.
 
 ## Project
-This project was developed for the Final Integrated Project on the Interactive Media Design program, Summer 2024, on Fanshawe College Downtown, London, Ontario. 
+The project consists on defining and working on different deliverables for the same end goal, building and launching the new brand of Dr. Nut, a discontinued soft drink produced on New Orleans until the late 1970s.
 
-This project consists on defining and working on different deliverables for the same end goal, building and launching the new brand of Dr. Nut, a discontinued soft drink produced on New Orleans until the late 1970s.
-
-Parallel projects were developed for the new Dr. Nut brand, including the redesign of the logo, a high-fidelity prototype of the new website, a 3x pages website and a video commercial.
+Parallel projects were developed for the new Dr. Nut brand, including the redesign of the logo, labels, 3D models, brandbook, design system and a high-fidelity prototype of the new website, a 3x pages website and a video commercial.
 
 
 ## Credits
