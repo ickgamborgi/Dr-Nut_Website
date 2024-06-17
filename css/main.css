@@ -570,17 +570,14 @@ footer {
 }
 
 
-/* About Section */
+/* About Page */
 #new-orleans-pride {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-image: url(../images/about-bg.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #about-container {
@@ -606,13 +603,13 @@ footer {
     color: #FCF3E4;
 }
 
-#new-orleans-pride p {
+.about-paragraph p {
     font-family: "Poppins", sans-serif;
     color: #FCF3E4;
     font-weight: 200;
     margin-top: 35px;
     margin-bottom: 35px;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 #new-orleans-pride button {
@@ -626,10 +623,8 @@ footer {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
-    align-self: end;
-    min-width: 50%;
-    max-width: 75%;
     cursor: pointer;
+    width: 100%;
     transition: .2s ease-in-out all;
 }
 
@@ -639,6 +634,92 @@ footer {
     font-weight: 600;
 }
 
+#our-origin-hero {
+    background-image: url(../images/placeholder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    box-shadow: 5px 0 10px #00000041;
+}
+
+#our-origin-text, #our-evolution-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#our-origin-text h3 {
+    background-color: #FCD68E;
+    color: #913236;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+#our-origin-text p {
+    color: #913236;
+    font-size: 14px;
+}
+
+#our-evolution {
+    background-color: #FCD68E;
+}
+
+#our-memories {
+    background-image: url(../images/our-memories-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#our-memories-text h3 {
+    color: #FCF3E4;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+#our-memories-icon object {
+    margin-bottom: 25px;
+}
+
+#our-memories-text p {
+    color: #FCF3E4;
+    font-size: 14px;
+}
+
+#our-evolution-hero {
+    background-image: url(../images/placeholder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    box-shadow: 5px 0 10px #00000041;
+}
+
+#our-evolution-text h3 {
+    background-color: #761116;
+    color: #FCF3E4;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+#our-evolution-text p {
+    color: #761116;
+    font-size: 14px;
+}
+
+#our-origin-hero, #our-evolution-hero {
+    border-bottom: 15px #761116 solid;
+}
+
+
 
 /* Subscribe Section */
 #subscribe {
@@ -646,9 +727,6 @@ footer {
     padding-right: 10%;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 #subscribe h2 {
@@ -664,7 +742,7 @@ footer {
     color: #913236;
     font-size: 14px;
     font-weight: 200;
-    max-width: 450px;
+    margin-top: 25px;
 }
 
 #subscribe h3 {
@@ -715,7 +793,7 @@ footer {
    text-transform: uppercase;
    letter-spacing: 2px;
    font-size: 16px;
-   align-self: end;
+   align-self: start;
    width: 100%;
    cursor: pointer;
 }
@@ -725,8 +803,8 @@ footer {
 }
 
 @keyframes submit {
-   0% {width: 100%; transition: ease-in-out;}
-   100% {width: 100%; background-color: #4F5620; transition: ease-in-out;}
+   0% {transition: ease-in-out;}
+   100% { background-color: #4F5620; transition: ease-in-out;}
 }
 
 #form-section button:hover::after {
@@ -959,6 +1037,15 @@ footer {
         gap: 15px;
     }
 
+    #new-orleans-pride button {
+        width: 70%;
+        background-position: left;
+    }
+
+    #form-section button {
+        width: 70%;
+    }
+
     .footer-container {
         flex-direction: row;
         width: 100%;
@@ -983,11 +1070,17 @@ footer {
         gap: 10px;
     }
 
+    #our-origin-hero, #our-evolution-hero {
+        border-bottom: 0px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
 }
 
 
 /* ---Desktop Styles--- */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
     #home-hero-heading button {
         width: 30%;
@@ -1035,5 +1128,9 @@ footer {
 
     .product-heading {
         margin-top: 25px;
+    }
+
+    #our-origin-text, #our-evolution-text {
+        margin-bottom: 0;
     }
 }
