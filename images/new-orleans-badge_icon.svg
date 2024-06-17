@@ -30,7 +30,7 @@
 		animation: lace .6s ease-in-out infinite alternate;
 		transform-origin: center;
 		transform-box: fill-box;
-		fill: #AA3A3B;
+		fill: #580C0D;
 	}
 
 	#new-orleans-badge:hover #shine {

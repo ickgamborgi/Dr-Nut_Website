@@ -4,6 +4,9 @@
 2. Header
 3. Hero
 4. Our Flavor Section
+X. Products Section
+X. About Section
+X. Subscribe Section
 X. Footer
 X. Mobile Styles
 X. Tablet Styles
@@ -19,7 +22,12 @@ X. Desktop Styles
 
 p {
     font-size: 14px;
+    font-family: "Poppins", sans-serif;
     line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Display", serif;
 }
 
 a {
@@ -42,6 +50,132 @@ input, textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+  
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+  
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+  
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -65,25 +199,24 @@ footer {
 /* Header */
 #sticky-nav-con {
     background-color: #761116;
-    height: 70px;
+    height: 75px;
     z-index: 100;
 }
 
 .navbar-header {
     display: flex;
     justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
     align-items: center;
     color: #FCF3E4;
 }
 
-.logo-header {
-    padding-left: 10%;
-}
 
 .logo-header img {
-    width: 65px;
-    padding: 10px;
-    padding-left: 15px;
+    height: 65px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .links-header ul {
@@ -98,8 +231,13 @@ footer {
 }
 
 .links-header ul li a {
-    padding: 25px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
     display: block;
+    cursor: pointer;
 }
 
 .links-header ul li:hover {
@@ -116,7 +254,7 @@ footer {
     border: 0;
     position: absolute;
     top: 0px;
-    right: 10%;
+    right: 9.5%;
     cursor: pointer;
     display: none;
  }
@@ -151,19 +289,21 @@ footer {
 }
 
 #home-hero-heading h3:nth-of-type(1) {
-    background-color: #f4b541b9;
+    background-color: #f4b541;
 }
 
 #home-hero-heading h3:nth-of-type(2) {
-    background-color: #F4B641b9;
+    background-color: #F4B641;
 }
 
 #home-hero-heading h3:nth-of-type(3) {
-    background-color: #FCD68Eb9;
+    background-color: #FCD68E;
 }
 
 #home-hero-heading h3 span {
-    font-family:cursive;
+    font-family: "Cookie", cursive;
+    font-size: 52px;
+    font-weight: 100;
 } */
 
 /* ---Our Flavor Section--- */
@@ -204,6 +344,195 @@ footer {
     color: #913236;
 }
 
+/* About Section */
+#new-orleans-pride {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-container {
+    display: flex;
+    flex: wrap;
+    gap: 15px;
+}
+
+#about-container object {
+    width: 80px;
+}
+
+#about-heading h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 36px;
+    color: #FCF3E4;
+}
+
+#about-heading h3 span {
+    font-family: "Cookie", cursive;
+    font-weight: 200;
+    font-size: 46px;
+    color: #FCF3E4;
+}
+
+#new-orleans-pride p {
+    font-family: "Poppins", sans-serif;
+    color: #FCF3E4;
+    font-weight: 200;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+#new-orleans-pride button {
+    padding: 12px 28px;
+    background-color: #913236;
+    color: #FCF3E4;
+    border: 2px #FCF3E4 solid;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    align-self: end;
+    min-width: 50%;
+    max-width: 75%;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+#new-orleans-pride button:hover {
+    background-color: #FCF3E4;
+    color: #913236;
+    font-weight: 600;
+}
+
+
+/* Subscribe Section */
+#subscribe {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#subscribe h2 {
+    font-size: 42px;
+    background-color: #FCD68E;
+    color: #761116;
+    padding: 5px 15px;
+    width: fit-content;
+}
+
+#subscribe p {
+    font-family: "Poppins", sans-serif;
+    color: #913236;
+    font-size: 14px;
+    font-weight: 200;
+    max-width: 450px;
+}
+
+#subscribe h3 {
+    font-family: "Poppins", sans-serif;
+    color: #913236;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#form-section form {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-section input, textarea {
+   padding: 15px;
+   border: 2px solid #d6d6d6;
+   background-color: #fcd58e33;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   width: auto;
+   font-family: "Poppins", sans-serif;
+}
+
+#form-section input:hover, textarea:hover {
+   border: 2px solid #913236;
+}
+
+#form-section input:focus, textarea:focus {
+   border: 2px solid #913236;
+   background-color: #b8b8b859;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   width: auto;
+   font-family: "Poppins", sans-serif;
+}
+
+#form-section button {
+   padding: 12px 28px;
+   background-color: #913236;
+   color: white;
+   border: none;
+   border-radius: 50px;
+   font-family: "Poppins", sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 16px;
+   align-self: end;
+   width: 100%;
+   cursor: pointer;
+}
+
+#form-section button:hover {
+   animation: submit forwards 0.75s;
+}
+
+@keyframes submit {
+   0% {width: 100%; transition: ease-in-out;}
+   100% {width: 100%; background-color: #4F5620; transition: ease-in-out;}
+}
+
+#form-section button:hover::after {
+   content: '\2713';
+   opacity: 0;
+   position: absolute;
+   margin-left: 5px;
+   animation: check forwards 1s;
+}
+
+@keyframes check {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+#consent-checkbox {
+   display: flex;
+   flex-direction: row;
+   gap: 15px;
+   margin-bottom: 25px;
+   font-size: 12px;
+   color: #7f7f7f;
+}
+
+#consent-checkbox span {
+    font-family: "Poppins", sans-serif;
+}
+
+#consent-checkbox input[type=checkbox]:checked ~ span::after{
+    margin-left: 5px;
+    content: '🔒'
+ }
+
 /* ---Footer--- */
 #footer {
     margin: auto;
@@ -226,6 +555,7 @@ footer {
 #footer-logo {
     width: 75px;
 }
+
 
 #footer-nav ul {
     text-align: center;
@@ -292,10 +622,11 @@ footer {
 
 /* ---Mobile Styles--- */
 @media (max-width: 680px) {
+    
     .navbar-header button {
+        margin-top: 15px;
         display: flex;
      }
-
 
      .navbar-header {
         align-items: flex-start;;
@@ -303,10 +634,13 @@ footer {
      }
 
      .links-header {
-        background-color: #761116;
+        background-color: #913236;
         width: 100%;
         z-index: 100;
         display: none;
+        margin-top: 6px;
+        border-radius: 0px 0px 15px 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
      }
 
      .links-header ul {
@@ -335,10 +669,6 @@ footer {
 
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
-
-    .links-header {
-        margin-right: 10%;
-    }
 
     .footer-container {
         flex-direction: row;
