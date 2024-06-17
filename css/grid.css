@@ -11,6 +11,8 @@ img, embed, object, video, picture {
 .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .grid-con {
@@ -50,8 +52,6 @@ img, embed, object, video, picture {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-column-gap: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
   .m-col-auto {grid-column: auto;}
