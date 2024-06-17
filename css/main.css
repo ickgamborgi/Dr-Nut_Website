@@ -47,7 +47,7 @@ input, textarea {
     border: 0;
     list-style: none;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .dm-serif-display-regular {
@@ -642,7 +642,7 @@ footer {
 
 #consent-checkbox input[type=checkbox]:checked ~ span::after{
     margin-left: 5px;
-    content: '🔒'
+    content: '🔒 YOUR DATA IS ENCRYPTED'
  }
 
 /* ---Footer--- */
@@ -680,7 +680,7 @@ footer {
 #footer-nav ul li a {
     color: #FCF3E4;
     opacity: .5;
-    transition: ease-in-out .2 all;
+    transition: ease-in-out .2s all;
 }
 
 #footer-nav ul li a:hover {
@@ -691,6 +691,7 @@ footer {
 #footer-socialMedia {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -700,30 +701,26 @@ footer {
     align-items: center;
     gap: 15px;
     cursor: pointer;
-}
-
-.social-iconDiv h5 {
-    color: #FCF3E4;
     opacity: .5;
-    transition: ease-in-out .2 all;
-    font-weight: 300;
-    letter-spacing: 2px;
+    transition: ease-in-out .2s all;
 }
 
-.social-iconDiv h5:hover {
+.social-iconDiv:hover {
     opacity: 1;
     text-decoration: underline;
 }
 
+.social-iconDiv h5 {
+    color: #FCF3E4;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+
 .social-iconDiv img {
-    opacity: .5;
     width: 20px;
     transition: all .2s ease-in-out;
  }
-
-.social-iconDiv img:hover {
-    opacity: 1;
-}
 
 #footer-copyright {
     font-size: 18px;
@@ -750,7 +747,7 @@ footer {
         width: 100%;
         z-index: 100;
         display: none;
-        margin-top: 6px;
+        margin-top: 3px;
         border-radius: 0px 0px 15px 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
      }
@@ -817,13 +814,14 @@ footer {
         justify-content: space-around;    
     }
 
-    #footer-nav {
-        border-left: 2px solid #fcf3e48b ;
-        padding-left: 15px;
-    }
-
     #footer-nav ul li {
         text-align: left;
+    }
+
+    #footer-socialMedia {
+        display: flex;
+        justify-items: center;
+        align-items: end;
     }
 
     #footer-copyright {
