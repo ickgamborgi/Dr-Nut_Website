@@ -198,7 +198,6 @@ footer {
 
 /* Header */
 #sticky-nav-con {
-    background-color: #761116;
     height: 75px;
     z-index: 100;
 }
@@ -207,11 +206,8 @@ footer {
 .navbar-header {
     display: flex;
     justify-content: space-between;
-    padding-right: 10%;
-    padding-left: 10%;
     align-items: center;
     color: #FCF3E4;
-    box-shadow: -10px 0 55px rgba(0, 0, 0, 0.265);
 }
 
 

@@ -17,10 +17,10 @@ img, embed, object, video, picture {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .col-auto {grid-column: auto;}
@@ -50,8 +50,8 @@ img, embed, object, video, picture {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-column-gap: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .m-col-auto {grid-column: auto;}
@@ -106,8 +106,6 @@ img, embed, object, video, picture {
 
   .grid-con {
     grid-column-gap: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .l-col-auto {grid-column: auto;}
