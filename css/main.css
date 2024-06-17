@@ -203,6 +203,7 @@ footer {
     z-index: 100;
 }
 
+
 .navbar-header {
     display: flex;
     justify-content: space-between;
@@ -210,6 +211,7 @@ footer {
     padding-left: 10%;
     align-items: center;
     color: #FCF3E4;
+    box-shadow: -10px 0 55px rgba(0, 0, 0, 0.265);
 }
 
 
@@ -381,13 +383,129 @@ footer {
     color: #913236;
 }
 
-/* Campaigns Section */
+/* ---Products Section--- */
+#products {
+    margin: 0;
+}
+
+#original-flavor {
+    background-color: #580C0D;
+}
+
+#chocolate-flavor {
+    background-color: #533234;
+}
+
+#pistachio-flavor {
+    background-color: #4F5620;
+}
+
+#pattern-original-flavor {
+    background-image: url(../images/pattern-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 175px;
+}
+
+#pattern-pistachio-flavor {
+    background-image: url(../images/pattern-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 175px;
+}
+
+#pattern-chocolate-flavor {
+    background-image: url(../images/pattern-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 175px;
+}
+
+#hero-original-flavor {
+    background-image: url(../images/placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+#hero-pistachio-flavor {
+    background-image: url(../images/placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+#hero-chocolate-flavor {
+    background-image: url(../images/placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.product-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.product-heading object {
+    height: 60px;
+}
+
+.product-heading h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FCF3E4;
+}
+
+.product-container {
+    padding-bottom: 50px;
+}
+
+.product-wrap p {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+    color: #FCF3E4;
+    font-weight: 200;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---Campaigns Section--- */
 #campaigns {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -399,6 +517,7 @@ footer {
         color: #761116;
         padding: 5px 15px;
         width: fit-content;
+        margin-bottom: 25px;
 }
 
 #campaigns-posters {
@@ -798,6 +917,44 @@ footer {
     #our-flavor h3 span {
         font-size: 46px;
     }
+    
+    #pattern-chocolate-flavor, #pattern-original-flavor, #pattern-pistachio-flavor {
+        height: 150px;
+    }
+
+    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
+        margin-top: -100px;
+    }
+
+    .product-hero {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-heading {
+        margin-top: 140px;
+        padding-left: 35px;
+    }
+
+    .product-wrap {
+       display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -100px;
+    }
+
+    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
+        margin: 0;
+    }
+
+    .product-heading {
+        display: flex;
+        flex-direction: row;
+    }
 
     #campaigns-posters {
         display: flex;
@@ -854,5 +1011,33 @@ footer {
 
     #our-flavor object {
         width: 105px;
+    }
+
+    #products {
+        display: flex;
+    }
+
+    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
+        margin-top: -350px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 500px;
+        width: 80%;
+        border-radius: 5000px;
+    }
+
+    #pattern-chocolate-flavor, #pattern-original-flavor, #pattern-pistachio-flavor {
+        height: 500px;
+    }
+
+    .product-wrap {
+        flex-direction: column;
+        align-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .product-heading {
+        margin-top: 25px;
     }
 }
