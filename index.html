@@ -32,9 +32,9 @@
                 <button id="button"></button>
                 <div class="links-header">
                     <ul>
-                        <li class="nav-item"><a>Home</a></li>
-                        <li class="nav-item"><a>Products</a></li>
-                        <li class="nav-item"><a>About</a></li>
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="products.html">Products</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,9 +43,9 @@
 
     <main>
         <!-- Hero -->
-        <section id="home-hero" class="grid-con">
+        <section id="home-hero" class="full-width-grid-con">
             <h2 class="hidden">Main Hero</h2>
-            <div id="home-hero-heading" class="col-start-1">
+            <div id="home-hero-heading" class="col-span-full">
                 <h3>New Face.</h3>
                 <h3>Same flavor.</h3>
                 <h3><span>And still delicious...</span></h3>
@@ -54,14 +54,19 @@
         </section>
 
         <!-- Our Flavor Section -->
-        <section id="our-flavor">
+        <section id="our-flavor" class="grid-con">
             <h2 class="hidden">Our Flavor Section</h2>
-            <object data="images/soft-drink_icon.svg" type="image/svg+xml" class="icon" id="soft-drink-icon"></object>
-            <div id="our-flavor-textbox">
-                <h3 id="flavor-text-1">Classic almond flavor</h3>
-                <h3 id="flavor-text-2">Nutty taste</h3>
-                <h3 id="flavor-text-3">Silky texture</h3>
-                <h3><span>Fresh and Delicious!</span></h3>
+            <div id="our-flavor-wrap" class="col-span-full m-col-start-1 m-col-end-7">
+                <object data="images/soft-drink_icon.svg" type="image/svg+xml" class="icon" id="soft-drink-icon"></object>
+                <div id="our-flavor-textbox" >
+                    <h3 id="flavor-text-1">Classic almond flavor</h3>
+                    <h3 id="flavor-text-2">Nutty taste</h3>
+                    <h3 id="flavor-text-3">Silky texture</h3>
+                    <h3><span>Fresh and Delicious!</span></h3>
+                </div>
+            </div>
+            <div id="our-flavor-paragraph" class="col-span-full m-col-start-8 m-col-end-13">
+                <p>Indulge in the extraordinary taste of Dr. Nut, a flavor experience unlike any other! With its distinctive almond essence, Dr. Nut stands out in a sea of ordinary soft drinks. Each sip delivers a perfect blend of sweetness and nutty undertones, creating a harmonious and refreshing sensation that lingers delightfully on your palate. The golden amber hue of Dr. Nut adds a touch of elegance, reminiscent of a finely brewed tea or rich caramel. Whether you're reminiscing about the good old days or discovering it for the first time, Dr. Nut's special flavor promises to be a delicious journey of nostalgia and novelty.</p>
             </div>
         </section>
 
@@ -117,9 +122,9 @@
         </article>
 
         <!-- Campaigns Section -->
-        <section id="campaigns">
-            <h2>Latest Campaigns</h2>
-            <div id="campaigns-posters">
+        <section id="campaigns" class="grid-con">
+            <h2 class="col-span-full">Latest Campaigns</h2>
+            <div id="campaigns-posters" class="col-span-full">
                 <div class="poster" id="poster-1">
                     <h3 class="hidden">Poster 1</h3>
                     <div class="border-poster"></div>
@@ -170,41 +175,38 @@
         </section>
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer id="footer" class="grid-con">
             <h2 class="hidden">Footer</h2>
-            <div class="footer-container">
-                <nav id="footer-nav">
-                    <h3 class="hidden">Footer Nav</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-                <div id="footer-logo">
-                    <a href="index.html"><img src="./images/logo-full.svg" alt="Dr. Nut Logo" class="col-span-full"></a>
+            <div class="logo-footer col-span-full m-col-start-1 m-col-end-3">
+                <h3 class="hidden">Footer Logo</h3>
+                <a href="index.html"><img src="./images/logo-full.svg" alt="Dr. Nut Logo"></a>
+            </div>
+            <nav id="footer-nav" class="col-span-full m-col-start-7 m-col-end-10">
+                <h3 class="hidden">Footer Navigation</h3>
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="products.html">Products</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div id="footer-social" class="col-span-full m-col-start-11 m-col-end-13">
+                <h3 class="hidden">Social Media</h3>
+                <div class="social-media">
+                    <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+                    <h4>@drnut</h4>
                 </div>
-                <div id="footer-socialMedia">
-                    <h3 class="hidden">Social Media</h3>
-                    <a href="https://instagram.com" target="_blank"><div class="social-iconDiv">
-                        <h4 class="hidden">Instagram</h4><img src="./images/icon-instagram.svg" alt="Instagram icon">
-                        <h5 class="social-text">@drnut</h5>
-                    </div></a>
-                    <a href="https://facebook.com" target="_blank"><div class="social-iconDiv">
-                        <h4 class="hidden">Facebook</h4><img src="./images/icon-facebook.svg" alt="Facebook icon">
-                        <h5 class="social-text">/drnut</h5>
-                    </div></a>
-                    <a href="https://twitter.com" target="_blank"><div class="social-iconDiv">
-                        <h4 class="hidden">Twitter</h4><img src="./images/icon-twitter.svg" alt="Twitter icon">
-                        <h5 class="social-text">@drnut</h5>
-                    </div></a>
+                <div class="social-media">
+                    <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+                    <h4>/drnut</h4>
+                </div>
+                <div class="social-media">
+                    <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+                    <h4>@dr.nut</h4>
                 </div>
             </div>
-
-            <div id="footer-copyright">
-                <h3 class="hidden">Copyright Information</h3>
-                <p>Dr. Nut &amp; World Bottling Co.</p>
-                <p>&copy; 2024 All rights reserved</p>
+            <div id="footer-copyright" class="col-span-full m-col-start-3 m-col-end-6">
+                <h3 class="hidden">Footer Copyright</h3>
+                <p>Dr. Nut &amp; World Bottling CO. <br>© 2024 All rights reserved</p>
             </div>
         </footer>
     </main>
