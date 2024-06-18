@@ -4,13 +4,14 @@
 2. Header
 3. Hero
 4. Our Flavor Section
-X. Products Section
-X. About Section
-X. Subscribe Section
-X. Footer
-X. Mobile Styles
-X. Tablet Styles
-X. Desktop Styles
+5. Products Section
+6. Campaigns Section
+7. About Page
+8. Subscribe Section
+9. Footer
+10. Mobile Styles
+11. Tablet Styles
+12. Desktop Styles
 
 */
 
@@ -196,7 +197,7 @@ footer {
 }
 
 
-/* Header */
+/* 2. ---Header--- */
 #sticky-nav-con {
     height: 75px;
     z-index: 100;
@@ -259,7 +260,7 @@ footer {
  }
 
 
-/* ---Hero--- */
+/* 3. ---Hero--- */
 
 #home-hero {
     height: 500px;
@@ -278,14 +279,14 @@ footer {
     gap: 25px;
 }
 
-#home-hero-heading h3 {
+#home-hero-heading h4 {
     font-size: 42px;
     color: #761116;
     width: fit-content;
     padding: 5px 10px;
 }
 
-#home-hero-heading button {
+#home-hero-heading a {
         padding: 12px 28px;
         background-color: #913237bc;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
@@ -295,38 +296,39 @@ footer {
         font-family: "Poppins", sans-serif;
         text-transform: uppercase;
         letter-spacing: 2px;
+        text-align: center;
         font-size: 16px;
         width: 80%;
         cursor: pointer;
         transition: .2s ease-in-out all;
 }
     
-#home-hero-heading button:hover {
+#home-hero-heading a:hover {
         background-color: #FCF3E4;
         color: #913236;
         font-weight: 600;
     }
 
 
-#home-hero-heading h3:nth-of-type(1) {
+#home-hero-heading h4:nth-of-type(1) {
     background-color: #f4b541;
 }
 
-#home-hero-heading h3:nth-of-type(2) {
+#home-hero-heading h4:nth-of-type(2) {
     background-color: #F4B641;
 }
 
-#home-hero-heading h3:nth-of-type(3) {
+#home-hero-heading h4:nth-of-type(3) {
     background-color: #FCD68E;
 }
 
-#home-hero-heading h3 span {
+#home-hero-heading h4 span {
     font-family: "Cookie", cursive;
     font-size: 52px;
     font-weight: 100;
 }
 
-/* ---Our Flavor Section--- */
+/* 4. ---Our Flavor Section--- */
 
 #our-flavor {
     margin-top: 100px;
@@ -356,35 +358,35 @@ footer {
     color: #913236;
 }
 
-#our-flavor-textbox h3 {
+#our-flavor-textbox h4 {
     width: fit-content;
     padding: 5px 10px 5px 10px;
     font-size: 28px;
 }
 
-#our-flavor-textbox h3:first-of-type {
+#our-flavor-textbox h4:first-of-type {
     background-color: #FCD68E;
     color: #761116;
 }
 
-#our-flavor-textbox h3:nth-of-type(2) {
+#our-flavor-textbox h4:nth-of-type(2) {
     background-color: #761116;
     color: #FCF3E4;
 }
 
-#our-flavor-textbox h3:nth-of-type(3) {
+#our-flavor-textbox h4:nth-of-type(3) {
     background-color: #913236;
     color: #FCF3E4;
 }
 
-#our-flavor-textbox h3 span {
+#our-flavor-textbox h4 span {
     font-family: "Cookie", cursive;
     font-weight: 200;
     font-size: 42px;
     color: #913236;
 }
 
-/* ---Products Section--- */
+/* 5. ---Products Section--- */
 #products {
     margin: 0;
 }
@@ -478,7 +480,7 @@ footer {
     height: 60px;
 }
 
-.product-heading h4 {
+.product-heading h5 {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -500,7 +502,7 @@ footer {
     flex-direction: column;
 }
 
-/* ---Campaigns Section--- */
+/* 6. ---Campaigns Section--- */
 #campaigns {
     width: 100%;
     padding-left: 10%;
@@ -512,7 +514,7 @@ footer {
     gap: 25px;
 }
 
-#campaigns h2 {
+#campaigns h3 {
         font-size: 42px;
         background-color: #FCD68E;
         color: #761116;
@@ -575,7 +577,7 @@ footer {
 }
 
 
-/* About Page */
+/* 7. ---About Page--- */
 #new-orleans-pride {
     background-image: url(../images/about-bg.jpg);
     background-position: left;
@@ -587,7 +589,6 @@ footer {
 
 #about-container {
     display: flex;
-    flex: wrap;
     gap: 15px;
 }
 
@@ -595,13 +596,13 @@ footer {
     width: 80px;
 }
 
-#about-heading h3 {
+#about-heading h4 {
     font-family: "DM Serif Display", serif;
     font-size: 36px;
     color: #FCF3E4;
 }
 
-#about-heading h3 span {
+#about-heading h4 span {
     font-family: "Cookie", cursive;
     font-weight: 200;
     font-size: 46px;
@@ -617,7 +618,7 @@ footer {
     max-width: 650px;
 }
 
-#new-orleans-pride button {
+#new-orleans-pride a {
     padding: 12px 28px;
     background-color: #913236;
     color: #FCF3E4;
@@ -625,6 +626,7 @@ footer {
     border-radius: 50px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -633,7 +635,7 @@ footer {
     transition: .2s ease-in-out all;
 }
 
-#new-orleans-pride button:hover {
+#new-orleans-pride a:hover {
     background-color: #FCF3E4;
     color: #913236;
     font-weight: 600;
@@ -653,7 +655,7 @@ footer {
     margin-bottom: 50px;
 }
 
-#our-origin-text h3 {
+#our-origin-text h4 {
     background-color: #FCD68E;
     color: #913236;
     width: fit-content;
@@ -680,8 +682,9 @@ footer {
     padding-bottom: 100px;
 }
 
-#our-memories-text h3 {
+#our-memories-text h4 {
     color: #FCF3E4;
+    background-color: #7611166f;
     width: fit-content;
     padding: 5px 15px 5px 15px;
     font-size: 42px;
@@ -706,7 +709,7 @@ footer {
     box-shadow: 5px 0 10px #00000041;
 }
 
-#our-evolution-text h3 {
+#our-evolution-text h4 {
     background-color: #761116;
     color: #FCF3E4;
     width: fit-content;
@@ -726,7 +729,7 @@ footer {
 
 
 
-/* Subscribe Section */
+/* 8. ---Subscribe Section--- */
 #subscribe {
     padding-left: 10%;
     padding-right: 10%;
@@ -734,7 +737,7 @@ footer {
     padding-bottom: 100px;
 }
 
-#subscribe h2 {
+#subscribe h3 {
     font-size: 42px;
     background-color: #FCD68E;
     color: #761116;
@@ -750,7 +753,7 @@ footer {
     margin-top: 25px;
 }
 
-#subscribe h3 {
+#subscribe h4 {
     font-family: "Poppins", sans-serif;
     color: #913236;
     font-size: 24px;
@@ -843,7 +846,7 @@ footer {
     content: '🔒 YOUR DATA IS ENCRYPTED'
  }
 
-/* ---Footer--- */
+/* 9. ---Footer--- */
 #footer {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -892,7 +895,7 @@ footer {
     transition: .2s ease-in-out all;
 }
 
-.social-media h4 {
+.social-media h5 {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: #FCF3E4;
@@ -912,7 +915,7 @@ footer {
     opacity: .75;
 }
 
-/* ---Mobile Styles--- */
+/* 10. ---Mobile Styles--- */
 @media (max-width: 680px) {
     
     .navbar-header button {
@@ -955,10 +958,10 @@ footer {
 
 }
 
-/* ---Tablet Styles--- */
+/* 11. ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
 
-    #home-hero-heading button {
+    #home-hero-heading a {
         width: 50%;
     }
 
@@ -966,7 +969,7 @@ footer {
         width: 90px;
     }
 
-    #our-flavor h3 {
+    #our-flavor h4 {
         font-size: 36px;
     }
 
@@ -976,7 +979,7 @@ footer {
         gap: 25px;
     }
 
-    #our-flavor h3 span {
+    #our-flavor h4 span {
         font-size: 46px;
     }
     
@@ -1025,7 +1028,7 @@ footer {
         gap: 15px;
     }
 
-    #new-orleans-pride button {
+    #new-orleans-pride a {
         width: 70%;
         background-position: left;
     }
@@ -1054,7 +1057,7 @@ footer {
     }
 
     .social-media {
-        align-items: right;
+        align-items: end;
     }
 
     .logo-footer {
@@ -1069,10 +1072,10 @@ footer {
 }
 
 
-/* ---Desktop Styles--- */
+/* 12. ---Desktop Styles--- */
 @media screen and (min-width: 1200px) {
 
-    #home-hero-heading button {
+    #home-hero-heading a {
         width: 30%;
     }
 
@@ -1088,11 +1091,11 @@ footer {
         max-width: 500px;
     }
 
-    #our-flavor h3 {
+    #our-flavor h4 {
         font-size: 42px;
     }
 
-    #our-flavor h3 span {
+    #our-flavor h4 span {
         font-size: 52px;
     }
 
