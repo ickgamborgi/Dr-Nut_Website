@@ -89,22 +89,31 @@
             </div>
         </article>
         
-        <!-- Subscribe Section -->
-        <section id="subscribe" class="grid-con">
+         <!-- Subscribe Section -->
+         <section id="subscribe" class="grid-con">
             <h3 class="col-span-full">Subscribe to our Newsletter</h3>
             <p class="col-span-full m-col-end-10 l-col-end-7">Become a member of our community and join our subscribers list to receive promotions, content and updates on Dr. Nut!</p>
             <h4 class="col-span-full">Fill in the form below with your information:</h4>
             <div id="form-section" class="col-span-full">
                 <h4 class="hidden">Newletter Form</h4>
-                <form action="#" method="post" enctype="text/plain">
-                    <input name="name" type="text" required placeholder="Full Name">
-                    <input name="email" type="number" required placeholder="Phone Number">
-                    <input name="phone" type="text" required placeholder="E-mail Address">
+                <form id="newsletterForm" method="post" enctype="text/plain">
+                    <input name="name" type="text"  placeholder="Full Name">
+                    <input name="phone" type="tel"  placeholder="Phone Number">
+                    <input name="email" type="email"  placeholder="E-mail Address">
                     <div id="consent-checkbox">
                         <input type="checkbox" class="checkbox" required><span>By checking this box, you agree in receiving content and e-mails from our Transmission List</span>
                     </div>
                     <button name="submit" type="submit" value="Send"><span>Submit Information</span></button>
                 </form>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="./images/confirmation-email.png" alt="Smiley Squirrel Confirmatoin Email">
+                    <h2>Thank you! &#10004;</h2>
+                    <p>You are now subscribed to our newsletter.</p>
+                </div>
             </div>
         </section>
 
