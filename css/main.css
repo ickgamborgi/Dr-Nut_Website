@@ -264,7 +264,7 @@ footer {
 
 #home-hero {
     height: 500px;
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/home_hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -279,6 +279,45 @@ footer {
     gap: 25px;
 }
 
+#home-hero-heading h4:nth-child(1) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out -.1s forwards;
+}
+
+#home-hero-heading h4:nth-child(2) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+#home-hero-heading h4:nth-child(3) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .1s forwards;
+}
+
+#home-hero-heading a {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .2s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(50px);
+        transform: scale(1.25);
+    }
+    90% {
+        transform: scale(.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 #home-hero-heading h4 {
     font-size: 42px;
     color: #761116;
@@ -288,9 +327,9 @@ footer {
 
 #home-hero-heading a {
         padding: 12px 28px;
-        background-color: #913237bc;
+        background-color: #fcf3e4b1;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
-        color: #FCF3E4;
+        color: #580C0D;
         border-radius: 50px;
         font-weight: 600;
         font-family: "Poppins", sans-serif;
@@ -537,7 +576,7 @@ footer {
 }
 
 #poster-1 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/campaign_1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -546,7 +585,7 @@ footer {
 }
 
 #poster-2 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/campaign_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -555,7 +594,7 @@ footer {
 }
 
 #poster-3 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/campaign_3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -594,12 +633,24 @@ footer {
 
 #about-container object {
     width: 80px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .25s forwards;
 }
 
 #about-heading h4 {
     font-family: "DM Serif Display", serif;
     font-size: 36px;
     color: #FCF3E4;
+}
+
+#about-heading h4:nth-child(1) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out -.25s forwards;
+}
+
+#about-heading h4:nth-child(2) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
 }
 
 #about-heading h4 span {
@@ -642,7 +693,7 @@ footer {
 }
 
 #our-origin-hero {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/about_origin.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -674,7 +725,7 @@ footer {
 }
 
 #our-memories {
-    background-image: url(../images/our-memories-bg.jpg);
+    background-image: url(../images/about_our-memories.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -701,7 +752,7 @@ footer {
 }
 
 #our-evolution-hero {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/about_evolution.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
