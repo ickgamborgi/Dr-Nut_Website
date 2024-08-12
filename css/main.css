@@ -427,11 +427,19 @@ footer {
 
 /* 5. ---Products Section--- */
 #products {
-    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 30px;
+}
+
+.product-container {
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 5px 0 10px #00000041;
 }
 
 #original-flavor {
-    background-color: #580C0D;
+    background-color:#580C0D;
 }
 
 #chocolate-flavor {
@@ -442,104 +450,93 @@ footer {
     background-color: #4F5620;
 }
 
-#pattern-original-flavor {
-    background-image: url(../images/pattern-1.jpg);
-    background-repeat: no-repeat;
+.product-pattern {
+    width: 100%;
+    height: 250px;
     background-size: cover;
-    height: 175px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
-#pattern-pistachio-flavor {
-    background-image: url(../images/pattern-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 175px;
+#pattern-original-flavor {
+    background-image: url(../images/pattern-1.jpg);
 }
 
 #pattern-chocolate-flavor {
     background-image: url(../images/pattern-2.jpg);
+}
+
+#pattern-pistachio-flavor {
+    background-image: url(../images/pattern-3.jpg);
+}
+
+.product-hero {
+    width: 80%;
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 175px;
+    background-position: center;
+    border-radius: 250px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.2) -10px -10px 2px 2px;
 }
 
 #hero-original-flavor {
-    background-image: url(../images/placeholder.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: -150px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 300px;
-    width: 300px;
-    border-radius: 500px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
-}
-
-#hero-pistachio-flavor {
-    background-image: url(../images/placeholder.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: -150px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 300px;
-    width: 300px;
-    border-radius: 500px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+    background-image: url(../images/flavor-original.jpg);
 }
 
 #hero-chocolate-flavor {
-    background-image: url(../images/placeholder.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: -150px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 300px;
-    width: 300px;
-    border-radius: 500px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+    background-image: url(../images/flavor-chocolate.jpg);
+}
+
+#hero-pistachio-flavor {
+    background-image: url(../images/flavor-pistachio.jpg);
+}
+
+.product-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-bottom: 40px;
+}
+
+.product-heading-wrap {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: left;
+}
+
+.product-heading-wrap p {
+    color:#FCF3E4;
+    max-width: 80%;
+    padding-left: 15px;
+    border-left: solid 2px #fcf3e464;
 }
 
 .product-heading {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    margin-top: 25px;
-    padding-right: 10%;
-    padding-left: 10%;
+    align-items: end;
+    gap: 10px;
 }
 
 .product-heading object {
-    height: 60px;
+    height: 35px;
 }
 
 .product-heading h5 {
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     color: #FCF3E4;
 }
 
-.product-container {
-    padding-bottom: 50px;
-}
 
-.product-wrap p {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 25px;
-    color: #FCF3E4;
-    font-weight: 200;
-    max-width: 550px;
-    display: flex;
-    flex-direction: column;
-}
 
 /* 6. ---Campaigns Section--- */
 #campaigns {
@@ -895,9 +892,52 @@ footer {
 #consent-checkbox input[type=checkbox]:checked ~ span::after{
     margin-left: 5px;
     content: '🔒 YOUR DATA IS ENCRYPTED'
- }
+}
 
-/* 9. ---Footer--- */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup img {
+    width:150px;
+}
+
+.popup-content {
+    background-color: #FCD68E;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h2 {
+    color:#761116;
+    font-size: 28px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #913236;
+    cursor:pointer;
+}
+
+ /* 9. ---Footer--- */
 #footer {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -1033,44 +1073,6 @@ footer {
     #our-flavor h4 span {
         font-size: 46px;
     }
-    
-    #pattern-chocolate-flavor, #pattern-original-flavor, #pattern-pistachio-flavor {
-        height: 150px;
-    }
-
-    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
-        margin-top: -100px;
-    }
-
-    .product-hero {
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .product-heading {
-        margin-top: 140px;
-        padding-left: 35px;
-    }
-
-    .product-wrap {
-       display: flex;
-        flex-direction: row;
-        justify-content: start;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: -100px;
-    }
-
-    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
-        margin: 0;
-    }
-
-    .product-heading {
-        display: flex;
-        flex-direction: row;
-    }
 
     #campaigns-posters {
         display: flex;
@@ -1152,34 +1154,6 @@ footer {
 
     #our-flavor object {
         width: 105px;
-    }
-
-    #products {
-        display: flex;
-    }
-
-    #hero-original-flavor, #hero-chocolate-flavor, #hero-pistachio-flavor {
-        margin-top: -350px;
-        margin-right: auto;
-        margin-left: auto;
-        height: 500px;
-        width: 80%;
-        border-radius: 5000px;
-    }
-
-    #pattern-chocolate-flavor, #pattern-original-flavor, #pattern-pistachio-flavor {
-        height: 500px;
-    }
-
-    .product-wrap {
-        flex-direction: column;
-        align-content: center;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .product-heading {
-        margin-top: 25px;
     }
 
     #our-origin-text, #our-evolution-text {

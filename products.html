@@ -46,6 +46,101 @@
     <main>
         <h2 class="hidden">Main Content</h2>
 
+         <!-- Products Section -->
+         <article id="products" class="grid-con">
+            <h3 class="hidden">Products Article</h3>
+            <!-- Product 1 -->
+            <div class="product-container col-span-full l-col-span-4" id="original-flavor">
+                <h4 class="hidden">Product 1: Original Flavor</h4>
+                <div class="product-pattern" id="pattern-original-flavor"></div>
+                <div class="product-wrap">
+                    <div class="product-hero" id="hero-original-flavor"></div>
+                    <div class="product-heading-wrap">
+                        <div class="product-heading">
+                            <object data="images/original-flavor_icon.svg" type="image/svg+xml" class="icon-product-heading" id="original-flavor-icon"></object>
+                            <h5>Original Flavor</h5>    
+                        </div>
+                        <p>Our original product from the good old days. Classic almond flavor soft drink. Nutty taste. Silky texture. Fresh and delicious!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-container col-span-full l-col-span-4" id="chocolate-flavor">
+                <h4 class="hidden">Product 2: Chocolate Flavor</h4>
+                <div class="product-pattern" id="pattern-chocolate-flavor"></div>
+                <div class="product-wrap">
+                    <div class="product-hero" id="hero-chocolate-flavor"></div>
+                    <div class="product-heading-wrap">
+                        <div class="product-heading">
+                            <object data="images/chocolate-flavor_icon.svg" type="image/svg+xml" class="icon-product-heading" id="chocolate-flavor-icon"></object>
+                            <h5>Chocolate Flavor</h5>    
+                        </div>
+                        <p>Attention chocolatiers: this is for those who like the sweet taste of cocoa. Chocolate taste. Silky texture. Still fresh and delicious!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-container col-span-full l-col-span-4" id="pistachio-flavor">
+                <h4 class="hidden">Product 3: Pistachio Flavor</h4>
+                <div class="product-pattern" id="pattern-pistachio-flavor"></div>
+                <div class="product-wrap">
+                    <div class="product-hero" id="hero-pistachio-flavor"></div>
+                    <div class="product-heading-wrap">
+                        <div class="product-heading">
+                            <object data="images/pistachio-flavor_icon.svg" type="image/svg+xml" class="icon-product-heading" id="pistachio-flavor-icon"></object>
+                            <h5>Pistachio Flavor</h5>    
+                        </div>
+                        <p>Check it out, you'll fall in love with this new one. Mildly sweet taste. Silky texture. And guess what? Yep, still fresh and delicious!</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+<!-- Subscribe Section -->
+<section id="subscribe" class="grid-con">
+    <h3 class="col-span-full">Subscribe to our Newsletter</h3>
+    <p class="col-span-full m-col-end-10 l-col-end-7">Become a member of our community and join our subscribers list to receive promotions, content and updates on Dr. Nut!</p>
+    <h4 class="col-span-full">Fill in the form below with your information:</h4>
+    <div id="form-section" class="col-span-full">
+        <h4 class="hidden">Newletter Form</h4>
+        <form id="newsletterForm" method="post" enctype="text/plain">
+            <input name="name" type="text"  placeholder="Full Name">
+            <input name="phone" type="tel"  placeholder="Phone Number">
+            <input name="email" type="email"  placeholder="E-mail Address">
+            <div id="consent-checkbox">
+                <input type="checkbox" class="checkbox" required><span>By checking this box, you agree in receiving content and e-mails from our Transmission List</span>
+            </div>
+            <button name="submit" type="submit" value="Send"><span>Submit Information</span></button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="./images/confirmation-email.png" alt="Smiley Squirrel Confirmatoin Email">
+            <h2>Thank you! &#10004;</h2>
+            <p>You are now subscribed to our newsletter.</p>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="new-orleans-pride" class="full-width-grid-con">
+            <h3 class="hidden">About Section</h3>
+            <div id="about-container" class="col-start-1 col-end-5 m-col-start-1">
+                <object data="images/new-orleans-badge_icon.svg" type="image/svg+xml" class="icon" id="new-orleans-badge-icon"></object>
+                <div id="about-heading">
+                    <h4>New Orleans Pride</h4>
+                    <h4><span>Since 1930</span></h4>
+                </div>
+            </div>
+            <div class="about-paragraph col-span-full">
+                <p>Born and raised in The Big Easy: New Orleans. Similar to jazz, we started booming on 1930s and turned out as a big pride and joy to fellows in our local region!</p>
+            </div>
+            <a href="about.html" class="col-span-full">Meet our Story</a>
+        </section>
+
         <!-- Footer -->
         <footer id="footer" class="grid-con">
             <h3 class="hidden">Footer</h3>
