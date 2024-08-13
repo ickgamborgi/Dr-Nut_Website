@@ -684,6 +684,7 @@ footer {
 
 .lb-content img {
     height:250px;
+    
 }
 
 .lb-content {
@@ -695,7 +696,7 @@ footer {
     display: flex;
     gap: 20px;
     width: 80%;
-    margin: 10% auto;
+    margin: 150px auto;
 }
 
 .lb-content-wrap {
@@ -746,20 +747,20 @@ footer {
     margin-top: 10px;
 }
 
+
+
 .lb_close-btn {
     position: absolute;
     top: 10px;
-    right: 25px;
-    font-size: 32px;
-    color: #FCF3E4;
+    right: 40px;
+    font-size: 48px;
+    color: white;
     cursor: pointer;
-    transition: all .5s ease-in-out;
 }
 
 .lb_close-btn:hover {
-    color: #FCD68E;
-    transform: scale(1.5);
-    cursor: pointer;
+    color: #913236;
+    cursor:pointer;
 }
 
 
@@ -1133,16 +1134,21 @@ footer {
     z-index: 100;
 }
 
+.lb-content img {
+    height:250px;
+}
+
 .popup img {
     width:150px;
 }
 
 .popup-content {
-    background-color: #FCD68E;
+    background-color: #fcd58ee2;
     padding: 50px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 100px auto;
 }
 
 .popup-content h2 {
