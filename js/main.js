@@ -78,7 +78,6 @@ window.addEventListener('click', function(event) {
 function openLightbox() {
     const index = this.getAttribute('data-index');
     const promotion = products[index];
-        
     
     console.log("User clicked on promotion " + promotion.name);
     console.log("Code generated for user: " + promotion.code);
