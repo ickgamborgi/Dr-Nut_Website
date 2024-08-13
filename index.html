@@ -77,7 +77,7 @@
 <article id="products" class="grid-con">
     <h3 class="hidden">Products Article</h3>
     <!-- Product 1 -->
-    <div class="product-container col-span-full l-col-span-4" id="original-flavor">
+    <div class="product-container col-span-full l-col-span-4" id="original-flavor" data-product-index="0">
         <h4 class="hidden">Product 1: Original Flavor</h4>
         <div class="product-pattern" id="pattern-original-flavor"></div>
         <div class="product-wrap">
@@ -89,13 +89,13 @@
                 </div>
                 <p>Our original product from the good old days. Classic almond flavor soft drink. Nutty taste. Silky texture. Fresh and delicious!</p>
             </div>
-            <div class="promotion-button">
+            <div class="promotion-button" data-index="0">
                 <h6>Get Promotion &raquo;</h6>
             </div>
         </div>
     </div>
     <!-- Product 2 -->
-    <div class="product-container col-span-full l-col-span-4" id="chocolate-flavor">
+    <div class="product-container col-span-full l-col-span-4" id="chocolate-flavor" data-product-index="1">
         <h4 class="hidden">Product 2: Chocolate Flavor</h4>
         <div class="product-pattern" id="pattern-chocolate-flavor"></div>
         <div class="product-wrap">
@@ -107,13 +107,13 @@
                 </div>
                 <p>Attention chocolatiers: this is for those who like the sweet taste of cocoa. Chocolate taste. Silky texture. Still fresh and delicious!</p>
             </div>
-            <div class="promotion-button">
+            <div class="promotion-button" data-index="1">
                 <h6>Get Promotion &raquo;</h6>
             </div>
         </div>
     </div>
     <!-- Product 3 -->
-    <div class="product-container col-span-full l-col-span-4" id="pistachio-flavor">
+    <div class="product-container col-span-full l-col-span-4" id="pistachio-flavor" data-product-index="2">
         <h4 class="hidden">Product 3: Pistachio Flavor</h4>
         <div class="product-pattern" id="pattern-pistachio-flavor"></div>
         <div class="product-wrap">
@@ -125,7 +125,7 @@
                 </div>
                 <p>Check it out, you'll fall in love with this new one. Mildly sweet taste. Silky texture. And guess what? Yep, still fresh and delicious!</p>
             </div>
-            <div class="promotion-button">
+            <div class="promotion-button" data-index="2">
                 <h6>Get Promotion &raquo;</h6>
             </div>
         </div>
@@ -237,7 +237,25 @@
                 <p>Dr. Nut &amp; World Bottling CO. <br>© 2024 All rights reserved</p>
             </div>
         </footer>
+
+            <!-- Dynamic Lightbox -->
+        <div id="lightbox" class="lightbox col-span-full">
+            <h4 class="hidden">Dynamic Lightbox</h4>
+            <a class="lb_close-btn">&times;</a>
+            <div class="lb-content">
+                <img src="./images/can_1.png" alt="Dr. Nut can 250mL" class="lb_image">
+                <div class="lb-content-wrap">
+                    <h5 class="lb_heading">Original Flavor</h5>
+                    <p class="lb_product-size">250mL and 355mL</p>
+                    <p class="lb_product-promo">Use our promo code below and get 50% off your first purchase with us!</p>
+                    <h6 class="lb_product-code">#DrNutOriginal50%</h6>
+                </div>
+            </div>
+        </div>
+        
     </main>
+
+    
 
     <!-- Link to JS file in the end of body tag -->
     <script src="js/main.js"></script>
