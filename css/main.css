@@ -790,6 +790,7 @@ footer {
     background-color: #FCD68E;
     color: #761116;
     padding: 5px 15px;
+    margin-bottom: 10px;
     width: fit-content;
 }
 
@@ -797,7 +798,7 @@ footer {
     font-family: "Poppins", sans-serif;
     color: #913236;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 25px;
 }
 
@@ -904,6 +905,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .popup img {
@@ -915,12 +917,16 @@ footer {
     padding: 50px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .popup-content h2 {
     color:#761116;
     font-size: 28px;
+}
+
+#subscribe p {
+    margin-top: 10px;
 }
 
 .close-btn {
@@ -1020,12 +1026,11 @@ footer {
      }
 
      .links-header {
-        background-color: #913236;
+        background-color: #580C0D;
         width: 100%;
         z-index: 100;
         display: none;
         margin-top: 3px;
-        border-radius: 0px 0px 15px 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
      }
 
