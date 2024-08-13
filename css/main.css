@@ -426,6 +426,50 @@ footer {
 }
 
 /* 5. ---Products Section--- */
+#products-hero {
+    background-image: url(../images/products_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#products-hero-container {
+    display: flex;
+    align-items: end;
+    gap: 35px;
+}
+
+#products-hero-container object {
+    width: 40px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .25s forwards;
+}
+
+#product-hero-heading h4 {
+    font-family: "DM Serif Display", serif;
+    font-size: 36px;
+    color: #FCF3E4;
+}
+
+#product-hero-heading h4:nth-child(1) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out -.25s forwards;
+}
+
+#product-hero-heading h4:nth-child(2) {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+#product-hero-heading h4 span {
+    font-family: "Cookie", cursive;
+    font-weight: 200;
+    font-size: 46px;
+    color: #FCF3E4;
+}
+
 #products {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -536,6 +580,62 @@ footer {
     color: #FCF3E4;
 }
 
+#product-flavor {
+    background-image: url(../images/products_flavor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#product-flavor-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#product-flavor-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#product-flavor-textbox h4 {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    font-size: 36px;
+}
+
+#product-flavor-textbox h4:first-of-type {
+    background-color: #fcd58eae;
+    color: #761116;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .5s forwards;
+}
+
+#product-flavor-textbox h4:nth-of-type(2) {
+    background-color: #761116b1;
+    color: #FCF3E4;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out .75s forwards;
+}
+
+#product-flavor-textbox h4:nth-of-type(3) {
+    background-color: #913237a8;
+    color: #FCF3E4;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out 1s forwards;
+}
+
+#product-flavor-textbox h4 span {
+    font-family: "Cookie", cursive;
+    font-weight: 200;
+    font-size: 42px;
+    color: #FCF3E4;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out 1.25s forwards;
+}
 
 
 /* 6. ---Campaigns Section--- */
