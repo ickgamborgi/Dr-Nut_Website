@@ -585,7 +585,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: left;
+    align-items: start;
 }
 
 .product-heading-wrap p {
