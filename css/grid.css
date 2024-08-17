@@ -19,7 +19,6 @@ img, embed, object, video, picture {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    max-width: 1450px;
     margin: 0 auto;
     padding-left: 10%;
     padding-right: 10%;

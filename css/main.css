@@ -194,6 +194,7 @@ body {
 
 footer {
     background-color: #761116;
+    width: 100%;
 }
 
 
@@ -202,7 +203,6 @@ footer {
     height: 75px;
     z-index: 100;
 }
-
 
 .navbar-header {
     display: flex;
@@ -281,23 +281,19 @@ footer {
 
 #home-hero-heading h4:nth-child(1) {
     opacity: 0;
-    animation: slideIn 1s ease-in-out -.1s forwards;
+    animation: slideIn 1s ease-in-out -.25s forwards;
 }
 
 #home-hero-heading h4:nth-child(2) {
     opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
+    animation: slideIn 1s ease-in-out .5s forwards;
 }
 
 #home-hero-heading h4:nth-child(3) {
     opacity: 0;
-    animation: slideIn 1s ease-in-out .1s forwards;
+    animation: slideIn 1s ease-in-out 1.25s forwards;
 }
 
-#home-hero-heading a {
-    opacity: 0;
-    animation: slideIn 1s ease-in-out .2s forwards;
-}
 
 @keyframes slideIn {
     0% {
@@ -920,13 +916,13 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
     box-shadow: 5px 0 10px #00000041;
 }
 
 #our-origin-text, #our-evolution-text {
     margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 #our-origin-text h4 {
@@ -952,8 +948,8 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
 #our-memories-text h4 {
@@ -979,7 +975,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
     box-shadow: 5px 0 10px #00000041;
 }
 
@@ -1175,6 +1171,7 @@ footer {
 }
 
  /* 9. ---Footer--- */
+ 
 #footer {
     padding-top: 75px;
     padding-bottom: 75px;
